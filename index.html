@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3school project</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <!--Begin nav-->
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">More<i class="nav-arrow-down fa fa-arrow-down"></i></a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--End nav-->
+            <!--Begin search button-->
+            <div class="search-button">
+                <i class="search-icon fa fa-search"></i>
+            </div>
+            <!-- End search button -->
+            <!-- Begin mobile menu -->
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="mobile-icon fa fa-bars "></i>
+            </div>
+        </div>
+        
+        <div id="slider">
+            <div class="text-content">
+                <h2 class="text-heading">New York</h2>
+                <div class="description">The atmostphere in New York is awesome!</div>
+            </div>
+        </div>
+        <div id="content">
+            <!--About section-->
+            <div id = "band" class="content-section">
+                <h2 class="section-heading">The Band</h2>
+                <p class="section-sub-heading">We love music</p>
+                <p class="about-text">We are the band which contains 3 members: Sơn, Đạt and Lam. We are grouping together and travelling around the world to bring a wonderful music to anyone who has passion with our music. Also we want to try to visit some new cities around the city to discover all about their culture, lifestyles, food. We really want to go abroad because it can widen our knowledge and brings us many good memories as well as sticking all the team members together.</p>
+                <!-- Member-list -->
+                <div class="row member-list">
+                    <div class="s-col-full col col-third text-center mt-32">
+                        <p class="member-name">Sơn</p>
+                        <img src="assets/img/bandmember.jpg" alt="" class="member-ava">
+                    </div>
+                    <div class="s-col-full col col-third text-center mt-32">
+                        <p class="member-name">Đạt</p>
+                        <img src="assets/img/bandmember1.jpg" alt="" class="member-ava">
+                    </div>
+                    <div class="s-col-full col col-third text-center mt-32">
+                        <p class="member-name">Lam</p>
+                        <img src="assets/img/bandmember2.jpg" alt="" class="member-ava">
+                    </div>
+                </div>
+            </div>
+            <!--Tour section-->
+            <div id = "tour" class="tour-section">
+                <div class="content-section">
+                    <h2 class="section-heading text-white">Tour Date</h2>
+                    <p class="section-sub-heading text-white">Remember to book your ticket</p>
+                    <!-- Tickets -->
+                    <ul class="ticket-list">
+                        <li>September <span class="sold-out">Sold out</span></li>
+                        <li>Octorber<span class="sold-out">Sold out</span></li>
+                        <li>November<span class="quantity">3</span></li>
+                    </ul>
+                    <!-- Place -->
+                    <div class="row place-list">
+                        <div class="s-col-full col col-third mt-16">
+                            <img src="assets/img/newyork.jpg" alt="" class="place-img">
+                            <div class="place-body">
+                                <h2 class="place-name">New York</h2>
+                                <p class="place-time">Sat 5 June 2021</p>
+                                <p class="place-description">Beautiful city: New York</p>
+                                <a href="" class="btn s-full-width">Buy Tickets</a>
+                            </div>
+                        </div>
+                        <div class="s-col-full col col-third mt-16">
+                            <img src="assets/img/paris.jpg" alt="" class="place-img">
+                            <div class="place-body">
+                                <h2 class="place-name">Paris</h2>
+                                <p class="place-time">Sun 6 June 2021</p>
+                                <p class="place-description">Paris is good with their food</p>
+                                <a href="" class="btn s-full-width">Buy Tickets</a>
+                            </div>
+                        </div>
+                        <div class="s-col-full col col-third mt-16">
+                            <img src="assets/img/sanfran.jpg" alt="" class="place-img">
+                            <div class="place-body">
+                                <h2 class="place-name">Chicago</h2>
+                                <p class="place-time">Mon 7 June 2021</p>
+                                <p class="place-description">Chicago is awesome too!</p>
+                                <a href="" class="btn s-full-width">Buy Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Contact section-->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">Contact</h2>
+                <p class="section-sub-heading">Drop a note?</p>
+                <div class="row contact-content">
+                    <div class="s-col-full col col-half contact-info">
+                        <p><i class="fas fa-map-marker"></i>Ha Noi, Viet Nam</p>
+                        <p><i class="fas fa-phone"></i>Phone: <a href="tel: 0904697036">0904697036</a></p>
+                        <p><i class="fas fa-envelope"></i>Email: <a href="mailto:sonbon1101@gmail.com">sonbon1101@gmail.com</a></p>
+                    </div>
+                    <div class="s-col-full col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="s-col-full col col-half">
+                                    <input type="text" class="form-control" required placeholder="Name">
+                                </div>
+                                <div class="s-col-full col col-half s-mt-8">
+                                    <input type="text" class="form-control" required placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-full mt-8">
+                                    <input type="text" class="form-control" required placeholder="Message">
+                                </div>
+                            </div>
+                            <input type="submit" value="SEND" class="contact-submit-btn s-full-width btn pull-right mt-16">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Img section -->
+            <div class="map-section">
+                <img src="assets/img/map.jpg" alt="" class="map-img">
+            </div>
+        </div>
+        <div id="footer">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="text-contact">Made by Sơn Bơn</p>
+        </div>
+    </div>
+
+    <script>
+        // Đóng mở mobile menu
+        const header = document.getElementById('header');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const headerHeight = header.clientHeight;
+        mobileMenu.onclick = function() {
+            const isClosed = header.clientHeight === headerHeight;
+            if(isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+        // Khai báo biến header/ mobileMenu/ headerHeight
+        // Đóng/ Mở mobile menu
+        // Khi click vào mobileMenu thì sẽ chạy hàm như sau: 
+            // Khai báo biến isclosed = header.clientHeight bằng với headerHeight (biến True False);
+            // Nếu biến isClosed đúng thì header.style.height ='auto' --> sổ ra 
+            // Nếu biến isClosed sai thì header.style.height = null --> đóng vào 
+        
+            // Tự động đóng khi chọn menu
+        const menuItems = document.querySelectorAll('#nav li a[href *= "#"]')
+        for (const i = 0; i < menuItems.length; i++) {
+            const menuItem = menuItems[i];
+            
+            menuItem.onclick = function(event)  {
+                const isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if(isParentMenu) {
+                    event.preventDefault();
+                } else {
+                    header.style.height = null;
+                }
+            }
+        }
+        //Khai báo biến menuItems là các thẻ nav li a có chứa dấu #
+        // Chạy vòng lặp for (khai báo biến i=0; nếu i nhỏ hơn số lượng MenuItems; tăng i lên 1) Nếu i thỏa mãn chạy: 
+            // Khai báo biến tạm menuItem = truyền giá trị của menuItems vị trí i vào;
+            // Khi click vào menuItem chạy hàm 
+               //header.style.height =null; --> giấu thanh đi 
+    </script>
+</body>
+</html>
